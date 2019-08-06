@@ -1,0 +1,19 @@
+.link{
+
+  cursor:pointer;
+  color: black;
+  padding:3px;
+}
+
+.link:hover {
+    color:red;
+}
+
+
+#hidden{
+  visibility: hidden;
+}
+
+#dataImage{
+  visibility: hidden;
+}

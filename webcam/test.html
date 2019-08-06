@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <img src="../img/logo.png" alt="" id="hidden" width="1px" height="1px">
+    <video id="video" width="640" height="480" autoplay=""></video>
+    <button id="snap">Prendre une photo !</button>
+    <canvas id="canvas" width="640" height="480"></canvas>
+
+    <div><a id="download">Télécharger la photo ! </a></div>
+
+    <form method="post" id="formulaire" name="formulaire" class="form-container">
+
+      <input type="text" id="dataImage" name="" value="">
+      <button type="button" onclick="" id="btn_confirmer" class="btn">Sauvegarder l'image</button>
+
+    </form>
+
+    <script src="webcam.js" charset="utf-8"></script>
+  </body>
+</html>

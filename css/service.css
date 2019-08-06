@@ -1,0 +1,82 @@
+/****************************************
+ Fichier : service.css
+ Auteur : Jean-Christophe Boisvert
+ Fonctionnalité : W-03 Classe requise pour faire Gestion des services
+ Date : Vendredi 3 Mai 2019
+
+ Vérification :
+ Date                       Nom                   Approuvé
+ =========================================================
+ 3 Mai 2019           William Gonin               Approuvé
+ 3 Mai 2019           Guillaume Côté              Approuvé
+
+ Historique de modifications :
+ Date                       Nom                 Description
+ =========================================================
+
+****************************************/
+label
+{
+  font-weight: bold;
+    margin-left: 10%;
+    display:inline-block;
+}
+
+h1
+{
+  text-align: center;
+  margin-bottom: 5%;
+}
+h2
+{
+  text-align: center;
+  margin-bottom: 15%;
+  background-color: #F51393;
+  color: white;
+}
+input, textarea
+{
+  margin-bottom: 10%;
+  width: 20%;
+  margin-left: 10%;
+}
+
+#form1
+{
+  float: left;
+  border-style:none;
+  width: 65%;
+  height: 50%
+}
+#form2
+{
+  float: right;
+  height: 50%;
+  margin-right: 5%;
+  border:2px solid black;
+}
+#bouton1
+{
+  margin-left: 33%;
+  margin-bottom: 5%;
+}
+#bouton2
+{
+  margin-left: 33%;
+  margin-bottom: 5%;
+}
+#bouton3
+{
+  margin-left: 40%;
+  margin-bottom: 5%;
+}
+#service
+{
+  width: 80%;
+  margin-bottom: 15%;
+  margin-left: 5%;
+}
+#description
+{
+  float: left;
+}

@@ -1,0 +1,208 @@
+/****************************************
+Fichier : style.css
+Auteur : William Gonin
+Fonctionnalité : Fichier de style pour la page d'exercice
+Date : 2019-04-24
+Vérification :
+Date                    Nom                      Approuvé
+2019-05-03           Guillaume                   Approuvé
+2019-05-03            Karl                         Oui
+=========================================================
+Historique de modifications :
+Date Nom Description
+=========================================================
+****************************************/
+td, th{
+  border: 1px solid black;
+
+}
+
+.fixed_header tbody{
+  display:block;
+  width: 100%;
+  overflow: auto;
+}
+.ha{
+  margin:auto;
+  font-size:20px;
+  width: 35%;
+}
+
+/*
+  ******************Gestion Exercices***********************
+*/
+.gestion_employe{
+  text-align:center;
+  width:100%;
+  align: right;
+}
+
+.fixed_header td{
+  border: 1px solid black;
+}
+
+.fixed_header thead th{
+  width:300px;
+  color: #f1f227;
+}
+
+.fixed_header tr:last-of-type td{
+  border-bottom: none;
+}
+
+.fixed_header td:first-of-type{
+  border-left: none;
+}
+
+.fixed_header{
+  width: 100%;
+
+  border-collapse: collapse;
+  border: 1px solid black;
+  align:center;
+}
+
+.fixed_header tbody{
+  display:block;
+  width: 100%;
+
+  height: 100%;
+  max-height:250px;
+
+}
+
+.fixed_header /*thead*/ tr {
+   display: block;
+}
+
+.fixed_header thead {
+  width: 100%;
+  background: #F51393;
+  color:#fff;
+}
+
+.fixed_header th, .fixed_header td {
+  padding: 5px;
+  text-align: left;
+text-overflow: ellipsis;
+}
+
+.gestion_employe_filler{
+  min-height:1px; /*Puisque le div est vide, il faut mettre ça sinon il ne prend pas tout son width*/
+}
+
+
+div.spacing{
+  min-height:30px;
+}
+
+form.formulaire_employe{
+  padding: 0 5% 0 5%;
+  text-align:left;
+  overflow:hidden;
+}
+
+form.formulaire_employe label{
+  clear:left;
+}
+
+form.formulaire_employe input, form.formulaire_employe select{
+  float:left;
+  width: 180px;
+
+}
+
+span.erreur{
+  color: red;
+  display: block;
+  min-height: 25px;
+  clear: both;
+}
+
+form.formulaire_employe div.conteneur_bouton{
+  text-align:center;
+}
+form.formulaire_employe div.conteneur_bouton input{
+  float:none;
+  width:100px;
+}
+
+div.conteneur_bouton:not(:last-of-type){
+  padding-bottom:15px;
+}
+
+
+
+
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+/*
+  Fin Gestion Exercices
+ */

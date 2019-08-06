@@ -1,0 +1,396 @@
+/******************CSS reset *******************/
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**************************FIN CSS RESET********************************/
+
+/* Modalité globale */
+.contenu{
+  max-width: 1200px;
+  margin:auto;
+  border:2px solid #000000;
+  overflow:hidden;
+}
+
+*{
+  box-sizing:border-box;
+  font-family:Arial;
+	margin: 0;
+	padding: 0;
+}
+
+/*Tableau jaune-rose*/
+.fixed_header td{
+  border: 1px solid black;
+    min-height:44px;
+    max-height:44px;
+    overflow:hidden;
+    display:block;
+}
+
+.fixed_header span{
+  min-width:100%;
+  min-height:100%;
+  display:block;
+}
+
+.fixed_header thead th{
+  color: #f1f227;
+}
+
+.fixed_header tr:last-of-type td{
+  border-bottom: none;
+}
+
+.fixed_header td:first-of-type{
+  border-left: none;
+}
+
+.fixed_header{
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 1px solid black;
+  align:center;
+}
+
+.fixed_header tbody{
+  display:block;
+  width: 100%;
+  overflow: auto;
+  height: 100%;
+  max-height:150px;
+}
+.fixed_header /*thead*/ tr {
+   display: block;
+   min-height:100%;
+   overflow:hidden;
+   line-height: 100%;
+}
+
+.fixed_header thead {
+  background: #F51393;
+  color:#fff;
+}
+
+.fixed_header th, .fixed_header td {
+  padding: 5px;
+  text-align: left;
+  text-overflow: ellipsis;
+}
+
+/*Fin tableau rose-jaune*/
+
+.gestion_employe_filler{
+  min-height:1px; /*Puisque le div est vide, il faut mettre ça sinon il ne prend pas tout son width*/
+}
+
+div.recherche{
+  padding:0 5% 0 5%;
+  text-align:left;
+}
+
+div.spacing{
+  min-height:30px;
+	display:block;
+}
+
+form.formulaire_employe{
+  padding: 0 5% 0 5%;
+  text-align:left;
+  overflow:hidden;
+}
+
+form.formulaire_employe label{
+  clear:left;
+}
+
+form.formulaire_employe input, form.formulaire_employe select{
+  float:left;
+  width: 180px;
+
+}
+
+form.formulaire_employe span.erreur{
+  color: red;
+  display: block;
+  min-height: 25px;
+  clear: both;
+}
+
+form.formulaire_employe div.conteneur_bouton{
+  text-align:center;
+}
+form.formulaire_employe div.conteneur_bouton input{
+  float:none;
+  width:100px;
+}
+
+div.conteneur_bouton:not(:last-of-type){
+  padding-bottom:15px;
+}
+
+/*
+  Header
+*/
+header{
+  background-color: black;
+}
+
+.menu:hover, .menu:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+#myDropdown{
+  z-index: 1;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 25%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  left: 25%;
+  top: 100px;
+}
+
+.buttonAjax{
+  background-color: green;
+  height:80px;
+  width:250px;
+  border:2px solid black;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  left: 25%;
+  top: 100px;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {
+  display: block;
+  left: 25%;
+  top: 100px;
+}
+
+.menu{
+  background-color: #5C8AFF;
+  float: left;
+  width: 25%;
+  height: 100px;
+  text-align: center;
+  border-bottom: 1px;
+  border-style: solid;
+  padding-top: 40px;
+  padding-bottom: 44px;
+  border: 1px solid black;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+nav.menu{
+      text-align:center;
+}
+
+nav.menu ul{
+  list-style:none;
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  height:100px;
+}
+
+.ha{
+  margin:auto;
+  font-size:55px;
+  width: 18%;
+}
+
+nav.menu li{
+  height:100%;
+  background-color: black;
+  padding: 2px 1px 2px 1px;
+
+}
+
+.img1{
+  height:90px;
+  width:90px;
+  margin-left: 100px;}
+
+nav.menu a{
+    background-color: #75B4EE;
+    text-decoration:none;
+    text-align:center;
+    height:100%;
+    padding-top:35px;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+  Fin header
+*/
+
+HTML{
+  height: 100%;
+  max-height:150px;
+}
+
+.standard{
+  border: 1px solid;
+  max-width: 1200px;
+}
+
+main{
+  height: auto;
+  border: 1px solid #000000;
+  background-color: #CCCCCC;
+  overflow: hidden;
+}
+
+body{
+  background: url("../img/web_background.png") no-repeat center center fixed;/*La majorite des interfaces ont cette image comme background principale*/
+  margin: auto;
+}
+
+.imgRed{
+  height:50px;
+  width:50px;
+}
+
+footer{
+  height: 100px;
+  background-color: #FFA7D9;
+  border: 2px solid;
+  text-align: center;
+}
+
+.footer-txt{
+  font-weight: bold;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/*
+  Fin Footer
+*/
+
+.transition-fade{
+	transition: .4s;
+	opacity: 1;
+}
+
+html.is-animating .transition-fade {
+	opacity: 0;
+	transform: translateY(-100px);
+}
+
+/*****************Pour le responsive du site Web*********************/
+
+[class*="col-"] {
+    width: 100%;
+}
+
+/* For mobile: */
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+    .col-t-1 {width: 8.33%;}
+    .col-t-2 {width: 16.66%;}
+    .col-t-3 {width: 25%;}
+    .col-t-4 {width: 33.33%;}
+    .col-t-5 {width: 41.66%;}
+    .col-t-6 {width: 50%;}
+    .col-t-7 {width: 58.33%;}
+    .col-t-8 {width: 66.66%;}
+    .col-t-9 {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 1300px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}

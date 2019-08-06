@@ -1,0 +1,273 @@
+/****************************************
+Fichier : style-max.css
+Auteur : Maxime Lussier
+Fonctionnalité : Feuille de style pour la page gestion des forfaits
+Date : 2019-04-24
+Vérification :
+Date                         Nom                Approuvé
+=========================================================
+
+Historique de modifications :
+Date                         Nom              Description
+=========================================================
+
+****************************************/
+
+.btnGlobal{
+  font-size: 16px;
+  width: 100px;
+  display:inline-block;
+}
+
+.btnGlobalLong{
+  font-size: 16px;
+  width: 200px;
+  display:inline-block;
+}
+
+/*
+  ******************Gestion Employé***********************
+*/
+
+.gestion_employe{
+  text-align:center;
+}
+
+tr {
+   display: block;
+}
+
+.fixed_header thead {
+  background: #F51393;
+  color:#fff;
+}
+
+.fixed_header th, .fixed_header td {
+  padding: 5px;
+  text-align: left;
+  text-overflow: ellipsis;
+}
+
+.gestion_employe_filler{
+  min-height:1px; /*Puisque le div est vide, il faut mettre ça sinon il ne prend pas tout son width*/
+}
+
+div.recherche{
+  padding:0 5% 0 5%;
+  text-align:left;
+}
+
+div.spacing{
+  min-height:30px;
+}
+
+form.formulaire_employe{
+  padding: 0 5% 0 5%;
+  text-align:left;
+  overflow:hidden;
+}
+
+form.formulaire_employe label{
+  clear:left;
+}
+
+form.formulaire_employe input, form.formulaire_employe select{
+  float:left;
+  width: 180px;
+
+}
+
+/*Aussi pour pageGestionCours*/
+span.erreur{
+  color: red;
+  display: block;
+  min-height: 25px;
+  clear: both;
+}
+
+form.formulaire_employe div.conteneur_bouton{
+  text-align:center;
+}
+form.formulaire_employe div.conteneur_bouton input{
+  float:none;
+  width:100px;
+}
+
+div.conteneur_bouton:not(:last-of-type){
+  padding-bottom:15px;
+}
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+/*
+  Fin Gestion Employé
+ */
+
+ /*
+   Gestion Cours
+ */
+ .gestion_cours{
+   text-align:center;
+ }
+
+ .sous_titre{
+   font-size:20px;
+   font-weight:bold;
+   padding-bottom:20px;
+ }
+
+ div.cours_ligne{
+   text-align:left;
+   padding:10px 20px 10px 20px;
+ }
+
+ div.cours_ligne_centre{
+   text-align:center;
+ }
+
+ .cours_ligne_centre .fixed_header{
+  margin-bottom:20px;
+}
+
+ div.form_contain{
+  padding: 20px;
+ }
+
+ div.form_contain form{
+    border: 2px solid black;
+    overflow:hidden;
+ }
+ /*
+   Fin Gestion Cours
+  */
+
+ /*****************Pour le responsive du site Web*********************/
+
+ /*[class*="col-"] {
+     width: 100%;
+ }*/
+ [class*='col'] {float: left;}
+
+ /* For mobile: */
+ .col-m-1 {width: 8.33%;}
+ .col-m-2 {width: 16.66%;}
+ .col-m-3 {width: 25%;}
+ .col-m-4 {width: 33.33%;}
+ .col-m-5 {width: 41.66%;}
+ .col-m-6 {width: 50%;}
+ .col-m-7 {width: 58.33%;}
+ .col-m-8 {width: 66.66%;}
+ .col-m-9 {width: 75%;}
+ .col-m-10 {width: 83.33%;}
+ .col-m-11 {width: 91.66%;}
+ .col-m-12 {width: 100%;}
+
+ @media only screen and (max-width: 767px){
+   .td-tab {font-size: 10px;}
+   .titre-tab {font-size: 10px;}
+ }
+
+
+ @media only screen and (min-width: 768px) {
+     /* For tablets: */
+     .col-t-1 {width: 8.33%;}
+     .col-t-2 {width: 16.66%;}
+     .col-t-3 {width: 25%;}
+     .col-t-4 {width: 33.33%;}
+     .col-t-5 {width: 41.66%;}
+     .col-t-6 {width: 50%;}
+     .col-t-7 {width: 58.33%;}
+     .col-t-8 {width: 66.66%;}
+     .col-t-9 {width: 75%;}
+     .col-t-10 {width: 83.33%;}
+     .col-t-11 {width: 91.66%;}
+     .col-t-12 {width: 100%;}
+
+     /*Gestion employe*/
+     div.conteneur_bouton:not(:last-of-type){
+       padding-bottom:0;
+     }
+     /*Fin gestion employe*/
+ }
+
+ @media only screen and (min-width: 1300px) {
+     /* For desktop: */
+     .col-1 {width: 8.33%;}
+     .col-2 {width: 16.66%;}
+     .col-3 {width: 25%;}
+     .col-4 {width: 33.33%;}
+     .col-5 {width: 41.66%;}
+     .col-6 {width: 50%;}
+     .col-7 {width: 58.33%;}
+     .col-8 {width: 66.66%;}
+     .col-9 {width: 75%;}
+     .col-10 {width: 83.33%;}
+     .col-11 {width: 91.66%;}
+     .col-12 {width: 100%;}
+ }

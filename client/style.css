@@ -1,0 +1,14 @@
+table{
+  border-collapse:collapse;
+}
+
+td, th{
+  border: 1px solid black;
+
+}
+
+.fixed_header tbody{
+  display:block;
+  width: 100%;
+  overflow: auto;
+}

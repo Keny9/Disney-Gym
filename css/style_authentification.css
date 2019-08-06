@@ -1,0 +1,93 @@
+/****************************************
+Fichier : style_authentification.css
+Auteur : Karl Boutin
+Fonctionnalité : Feuille de style pour la page d'authentification
+Date : 2019-04-24
+Vérification :
+Date                         Nom                Approuvé
+=========================================================
+
+Historique de modifications :
+Date                         Nom              Description
+=========================================================
+****************************************/
+/**CSS pour la page authentification.php **/
+
+#body-connexion{
+ background-color: #CCCCCC;
+}
+
+#img-connexion{
+ height: auto;
+}
+
+.block-connexion{
+ background-color: #FFFFFF;
+ min-height: 480px;
+ margin: 0 auto;
+ margin-top: 2%;
+ display: block;
+ opacity: 0.9;
+}
+
+.erreur-login{
+ color: #F71B1B;
+ height: 16px;
+}
+
+.label-connexion{
+ display: block;
+ width: 150px;
+ float: left;
+}
+
+#titre-connexion{
+ font-family: 'Ultra', serif;
+ font-size: 46px;
+ padding-left: 15px;
+ padding-top: 15px;
+ display: block;
+ float: left;
+}
+
+#form-connexion{
+ display: block;
+ min-height: 175px;
+ margin-left: 50px;
+ float: left;
+ margin-top: 10px;
+}
+
+.button-connexion{
+ display: block;
+ float: left;
+ width: 75px;
+ margin: 5px;
+}
+
+.block-button-connexion{
+ display: block;
+ width: 54%;
+ margin-left: 146px;
+ overflow: hidden;
+}
+
+#forgotPassword{
+ margin-left: 150px;
+}
+
+.footer-connexion{
+ text-align: center;
+ font-weight: bold;
+ padding-top: 20px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1
+}
+/**Fin CSS page authentification.php**/

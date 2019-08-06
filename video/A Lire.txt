@@ -1,0 +1,2 @@
+Il y avait une video pour l'arrière plan à l'authentification. J'ai du l'enlever puisque c'était trop volumineux
+pour remettre le projet sur LÉA.

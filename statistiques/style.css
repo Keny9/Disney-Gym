@@ -1,0 +1,60 @@
+/****************************************
+Fichier : style.php
+Auteur : William Gonin
+Fonctionnalité : Fichier pour le style de la page statistiques
+Date : 2019-04-23
+
+Vérification :
+Date                  Nom                       Approuvé
+2019-05-03           Guillaume                  Approuvé
+2019-05-03            Karl                       Oui
+2019-05-03            Maxime                    Approuvé
+=========================================================
+
+Historique de modifications :
+Date                  Nom                     Description
+=========================================================
+****************************************/
+.img1{
+  height:90px;
+  width:90px;
+  margin-left: 100px;
+}
+.ha{
+  margin:auto;
+  font-size:30px;
+  width: 35%;
+}
+.buttonAjax:hover {
+  background-color: blue;
+  color: white;
+  transition:3s;
+}
+.buttonAjax{
+  margin: auto;
+  background-color: lightgreen;
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border: 2px black;
+}
+.buttonAjax:active {
+  background-color: green;
+  transition: 3s;
+}
+.buttonGuide{
+  margin: auto;
+  background-color: cyan;
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+
+  border: 2px black;
+}
+.buttonGuide:hover {
+  background-color: magenta;
+  color: white;
+  transition:3s;
+}

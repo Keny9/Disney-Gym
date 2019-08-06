@@ -1,0 +1,120 @@
+/****************************************
+Fichier : style_accueil.css
+Auteur : Karl Boutin
+Fonctionnalité : Feuille de style pour la page d'accueil
+Date : 2019-04-24
+Vérification :
+Date                         Nom                Approuvé
+=========================================================
+
+Historique de modifications :
+Date                         Nom              Description
+=========================================================
+****************************************/
+
+/**Page d'accueil**/
+.titre{
+  font-family: 'Ultra', serif;
+  font-size: 46px;
+  padding-top: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.message-acceuil{
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.salutation{
+  position: absolute;
+  top: 245px;
+  left: 46%;
+  font-size: 36px;
+}
+
+#bulle{
+  display: block;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.container{
+  display: block;
+  float: left;
+  width: 33%;
+  height: 270px;
+}
+
+#container-p{
+  overflow: auto;
+}
+
+#mickeyAccueil{
+  display: block;
+  width: 167px;
+  height: 263px;
+  margin: 0 auto;
+}
+
+#duck{
+  display: block;
+  width: 244px;
+  height: 197px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#btn-accueil2{
+  margin: 0 auto;
+}
+
+#container-button{
+  margin: 0 auto;
+  margin-top: 100px;
+  height: 150px;
+}
+
+.btn-demo{
+  display: block;
+  font-size: 16px;
+  width: 300px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 25%;
+  color: #FFFFFF;
+  border-radius: 4px;
+  background: rgb(66, 184, 221);
+  border: 1px solid rgb(48, 124, 147);
+  transition: 0.3s;
+}
+
+.btn-demo:hover{
+  background: rgb(59, 141, 165);
+}
+
+.btn-demo > a {
+  text-decoration: none;
+  display: block;
+  height: 50px;
+  width: 300px;
+  cursor: default;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  line-height: 45px;
+  transition: 0.3s;
+}
+
+a:visited { text-decoration: none; color: black; }
+a:focus { text-decoration: none; color: black;}
+a:hover, a:active { text-decoration: none; color: #FFFFFF;}
+
+.bottom-accueil{
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 896px){
+  .salutation{top : 290px; left: 41%;}
+}
+
+/**Fin CSS Page d'accueil**/

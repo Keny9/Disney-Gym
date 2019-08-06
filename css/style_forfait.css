@@ -1,0 +1,216 @@
+/****************************************
+Fichier : style_forfait.css
+Auteur : Karl Boutin
+Fonctionnalité : Feuille de style pour la page gestion des forfaits
+Date : 2019-04-24
+Vérification :
+Date                         Nom                Approuvé
+=========================================================
+
+Historique de modifications :
+Date                         Nom              Description
+=========================================================
+****************************************/
+
+/**CSS Page gestion des types de forfait **/
+.form-forfait{
+  display: block;
+  float: left;
+  margin: 15px;
+  background-color: #C0C0C0;
+  border: solid #1B3280 2px;
+}
+
+.form-forfait:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.gestionTitre{
+  font-size: 48px;
+  padding: 10px 0 35px 30px;
+  font-weight: bold;
+  font-family: 'Bitter', serif;
+}
+
+.group-input > label{
+  display: block;
+  float: left;
+  margin-left: 60px;
+  font-size: 18px;
+}
+
+.signeF{
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.listForfait{
+  width: 200px;
+  font-size: 18px;
+}
+
+#list2{
+  display: block;
+  margin: 0 auto;
+  clear: both;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.listForfait > option{
+  padding: 5px;
+}
+
+p.gestionTitre{
+  font-size: 28px;
+}
+
+.column {
+  float: left;
+}
+
+#column2{
+  border-left: 2px solid #1B3280;
+  height: 150px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.headerF{
+  font-size: 18px;
+  padding: 15px 0 0 30px;
+  font-weight: bold;
+}
+
+.column > label {
+  display: block;
+  width: 150px;
+  float: left;
+  margin-left: 60px;
+  font-size: 18px;
+}
+
+.column > input {
+  width: 47px;
+}
+
+#titreForfait{
+  font-family: 'Bitter', serif;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px 0 10px 0;
+}
+
+#btnSuppForfait{
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.btnForfait{
+  display: block;
+  font-size: 16px;
+  width: 100px;
+}
+
+.btnGestionForfait > .btnForfait{
+  display: inline-block;
+  margin: 0 0 40px 250px;
+
+}
+
+#goofy{
+  display: block;
+  margin: 0 auto;
+}
+
+textarea{
+  resize: none;
+}
+
+.erreur{
+  color: #F71B1B;
+  padding-bottom: 10px;
+  margin-left: 60px;
+}
+
+.alert {
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 20px;
+  background-color: #f44336;
+  border: 2px solid black;
+  color: white;
+  display: none;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.fa {
+  display: inline-block;
+  /*transition: all .2 ease-in-out;*/
+  transition: transform .5s;
+}
+
+.fa:hover {
+  transform: scale(1.5);
+}
+
+.tooltip .tooltiptext{
+  visibility: hidden;
+  width: 170px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#optionVide{
+  display: none;
+}
+
+@media only screen and (max-width: 1300px){
+  #column2 {border-left: 0; height: auto;}
+}
+
+@media only screen and (max-width: 767px){
+  .group-input > label {margin-left: 30px; margin-bottom: 5px;}
+  .group-input > input {margin-left: 30px; display: inline-block;}
+  .group-input > select {margin-left: 30px; display: block;}
+  .group-input > textarea {margin-left: 30px; display: block;}
+  .signeF {margin-left: 0; width: auto; display: inline-block; width:15px;}
+  #titreForfait{display: block; margin: 0 auto;}
+  .btnGestionForfait > .btnForfait {display: block; margin: 0 auto; margin-top: 10px;}
+  .btnGestionForfait {margin-bottom: 25px;}
+  .column {display: block; margin: 0 auto; float: none;}
+  #column2 {border-left: 0; height: 0;}
+}
+
+
+/**Fin CSS Page gestion des types de forfait **/
